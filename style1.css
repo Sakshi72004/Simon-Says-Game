@@ -1,0 +1,198 @@
+/* ==== Common Styling ==== */
+body {
+    text-align: center;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+h1 {
+    font-size: 3rem;
+    margin: 0.5rem 0 0.5rem;
+}
+
+h2 {
+    font-size: 1.5rem;
+    margin-bottom: 1 rem;
+}
+
+#theme-toggle {
+    padding: 0.5rem 1rem;
+    font-size: 1rem;
+    border: none;
+    cursor: pointer;
+    border-radius: 10px;
+    background-color: #444;
+    color: #fff;
+    margin-bottom: 2rem;
+    margin-top: 1rem;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+/* ==== Light Theme ==== */
+body.light {
+    background-color: #f2f2f2;
+    color: #111;
+    border: #121212 1px solid ;
+}
+body.light #theme-toggle {
+    background-color: #ddd;
+    color: #111;
+}
+
+/* ==== Dark Theme ==== */
+body.dark {
+    background-color: #121212;
+    color: white;
+}
+body.dark #theme-toggle {
+    background-color: #333;
+    color: white;
+}
+
+/* Button Colors and Effects */
+.btn {
+    height: 150px;
+    width: 150px;
+    border-radius: 20%;
+    border: 5px solid rgb(247, 117, 3);
+    margin: 1rem;
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: white;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: transform 0.1s ease;
+}
+.btn:active {
+    transform: scale(0.95);
+}
+
+.red { background-color: #e9071e; }
+.yellow { background-color: #f5c507; }
+.purple { background-color: #3318e1; }
+.green { background-color: #74e404; }
+
+
+.flash {
+    background-color: white !important;
+    box-shadow: 0 0 20px white;
+}
+.userflash {
+    background-color: palevioletred !important;
+    box-shadow: 0 0 10px palevioletred;
+}
+
+.btn-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.line-one,
+.line-two {
+  display: flex;
+  justify-content: center;
+}
+
+.btn {
+  height: 150px;
+  width: 150px;
+  border-radius: 20%;
+  border: 2px solid rgb(247, 247, 251);
+  margin: 1rem;
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: white;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: transform 0.1s ease;
+}
+body {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  min-height: 100vh;
+  padding-top: 1rem;
+}
+.intro-text {
+    font-size: 1.6rem;
+    color: #f01616;
+    margin-bottom: 1rem;
+}
+
+#how-to-play-btn {
+  margin-bottom: 1rem;
+  padding:  0.5rem;
+  font-size: 1rem;
+  background-color: #444;
+  color: #fff;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+#how-to-play-btn:hover {
+  background-color: #666;
+}
+body.light #how-to-play-btn {
+  background-color: #ddd;
+  color: #000;
+}
+body.light #how-to-play-btn:hover {
+  background-color: #bbb;
+}
+
+/* Modal Styles */
+.modal {
+  display: none;
+  position: fixed;
+  z-index: 999;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  background-color: rgba(0,0,0,0.7);
+}
+
+.modal-content {
+  background-color: #1e1e1e;
+  margin: 10% auto;
+  padding: 20px;
+  border-radius: 10px;
+  width: 80%;
+  max-width: 500px;
+  color: #fff;
+  text-align: left;
+  position: relative;
+  animation: fadeIn 0.3s;
+}
+
+body.light .modal-content {
+  background-color: #f4f4f4;
+  color: #111;
+}
+
+.close-btn {
+  color: #ccc;
+  position: absolute;
+  top: 10px;
+  right: 20px;
+  font-size: 28px;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.close-btn:hover {
+  color: white;
+}
+
+@keyframes fadeIn {
+  from {opacity: 0;}
+  to {opacity: 1;}
+}
