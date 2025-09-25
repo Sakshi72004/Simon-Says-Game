@@ -25,3 +25,5 @@ Each level gets harder... can you keep up?
 4. A wrong move ends the game — but don’t worry, you can always restart!
 
 
+🔗 You can deploy this project easily using:- https://sakshi72004.github.io/Simon-Says-Game/
+
